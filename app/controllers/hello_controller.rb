@@ -28,4 +28,9 @@ class HelloController < ApplicationController
 			render text: "#{session[:times]}"
 		end	
 	end
+
+	def restart
+		session[:times]= nil
+		render text: "destroyed sesh"
+	end
 end

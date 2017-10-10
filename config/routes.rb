@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'say/hello' => "hello#hello"
   get 'say/hello(/:name)' => "hello#say_someone"
   get 'times' => "hello#times"
+  get 'times/restart' => "hello#restart"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
